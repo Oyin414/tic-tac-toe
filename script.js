@@ -1,4 +1,4 @@
-
+/* Creates the array which will the player tokens */
 const Gameboard = (function(){
 const rows = 3;
 const columns = 3;
@@ -96,7 +96,7 @@ return {
 })
 
 
-
+/* Adds the grids onto the pages and allows them to be interacted with */
 function displayController(){
   const board = document.querySelector('.board')
   const turn = document.querySelector('.turn')
@@ -104,7 +104,7 @@ function displayController(){
   const gameController = players()
   const restart = document.querySelector('.restart')
   const game = Gameboard()
-
+   
   gameBoard.forEach((column,index)=>{
     let gridItem = document.createElement('div');
   gridItem.classList.add('grid-item')
