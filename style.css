@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightcyan;
+}
+
+button{
+    padding: 8px;
+    border-radius: 3px;
+    background-color: beige;
+}
+
+.board{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 650px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.cell{
+    cursor: pointer;
+}
+
+.container{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.turn{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.grid-item{
+     border: 1px solid black;
+    text-align: center;
+    font-size: 80px;
+}
